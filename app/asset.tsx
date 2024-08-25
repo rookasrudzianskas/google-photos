@@ -11,6 +11,7 @@ export default function AssetPage() {
   const { getAssetById, syncToCloud } = useMedia();
 
   const asset = getAssetById(id);
+  console.log(JSON.stringify(asset, null, 2));
 
   if (!asset) {
     return <Text>Asset not found!</Text>;
